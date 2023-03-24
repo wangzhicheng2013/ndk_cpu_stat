@@ -71,7 +71,7 @@ int main(int argc, const char **argv) {
         cpu_avg_usage += cpu_real_usage;
         printf("%s cpu real usage:%lf\n", process_name, cpu_real_usage);
         printf("%s cpu average usage:%lf\n", process_name, cpu_avg_usage / (i + 1));
-        sleep(1);
+        sleep(stat_interval);
     }
 
     return 0;
